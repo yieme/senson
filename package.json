@@ -1,0 +1,30 @@
+{
+  "name": "senson",
+  "version": "1.0.0",
+  "description": "SenecaJS simplified jsonic",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R list test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://yieme@github.com/yieme/senson.git"
+  },
+  "keywords": [
+    "jsonic",
+    "senecajs"
+  ],
+  "author": "yieme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yieme/senson/issues"
+  },
+  "homepage": "https://github.com/yieme/senson",
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.6.2"
+  },
+  "dependencies": {
+    "jsonic": "^0.1.2"
+  }
+}
