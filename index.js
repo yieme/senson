@@ -39,11 +39,4 @@ function senson(param, obj) {
   return obj
 }
 
-
-// change the default role
-function role(newRole) {
-  role = newRole
-}
-
 module.exports = senson
-//module.export.role = role
