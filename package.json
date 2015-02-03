@@ -1,6 +1,6 @@
 {
   "name": "senson",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "SenecaJS simplified jsonic",
   "main": "index.js",
   "scripts": {
