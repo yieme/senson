@@ -2,7 +2,7 @@
 var should = require('should')
 var exec = require('child_process').exec
 
-describe('package', function() {
+describe('example', function() {
   it('Regular Jsonic', function(done) {
 		exec("node examples/regular_jsonic.js", function (error, stdout, stderr) {
 			if (error) throw error

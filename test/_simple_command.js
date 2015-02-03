@@ -2,7 +2,7 @@
 var should = require('should')
 var exec = require('child_process').exec
 
-describe('package', function() {
+describe('example', function() {
   it('Simple Command', function(done) {
 		exec("node examples/simple_command.js", function (error, stdout, stderr) {
 			if (error) throw error

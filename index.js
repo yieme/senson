@@ -14,18 +14,21 @@ function senson(param, obj) {
     var command = part[0]
     if (command && command.indexOf(':') < 0) {
       var roleCommand = command.split('.')
-      if (roleCommand[1]) {
+      if (typeof roleCommand[1] == 'string' && roleCommand[1].length > 0) {
         if (isObj) {
           obj.role = roleCommand[0]
-          obj.cmd  = roleCommand[1]
+          if (roleCommand[1].length > 0) {
+            obj.cmd  = roleCommand[1]
+          }
         } else {
           part[0]='role:' + roleCommand[0] + ',cmd:' + roleCommand[1]
         }
       } else {
+        var context = (typeof roleCommand[1] == 'string') ? 'role' : 'cmd'
         if (isObj) {
-          obj.cmd = roleCommand[0]
+          obj[context] = roleCommand[0]
         } else {
-          part[0]='cmd:' + roleCommand[0]
+          part[0]=context + ':' + roleCommand[0]
         }
       }
       if (!isObj) {

@@ -5,7 +5,7 @@
 var should = require('should')
 var exec   = require('child_process').exec
 
-describe('package', function() {
+describe('example', function() {
   it('Command and Object', function(done) {
   exec('node examples/command-and-object.js', function (error, stdout, stderr) {
     if (error) throw error
