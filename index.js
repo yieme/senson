@@ -1,7 +1,6 @@
 "use strict";
 
 var jsonic = require('jsonic')
-var role = undefined
 
 // input: jsonic_string
 // or     command,jsonic_string
