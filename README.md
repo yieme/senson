@@ -7,30 +7,10 @@
 ```js
 npm install senson --save
 ```
-
+<!-- EXAMPLES:BEGIN -->
 ## Examples
 
-### Simple Command
-
-```js
-var senson = require('../index')
-
-var test   = senson('run,job:count')
-
-console.log(test) // { cmd: 'run', job: 'count' }
-```
-
-### Role Command
-
-```js
-var senson = require('../index')
-
-var test   = senson('tasks#run,job:count')
-
-console.log(test) // { role: 'tasks', cmd: 'run', job: 'count' }
-```
-
-### Regular [jsonic](https://github.com/rjrodger/jsonic) passthru
+### Regular jsonic
 
 ```js
 var senson = require('../index')
@@ -40,4 +20,24 @@ var test   = senson('cmd:run,job:count')
 console.log(test) // { cmd: 'run', job: 'count' }
 ```
 
+### Role command
+
+```js
+var senson = require('../index')
+
+var test   = senson('tasks.run,job:count')
+
+console.log(test) // { role: 'tasks', cmd: 'run', job: 'count' }
+```
+
+### Simple command
+
+```js
+var senson = require('../index')
+
+var test   = senson('run,job:count')
+
+console.log(test) // { cmd: 'run', job: 'count' }
+```
+<!-- EXAMPLES:END -->
 ## License: MIT
