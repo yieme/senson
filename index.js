@@ -28,7 +28,7 @@ function senson(param, obj) {
           part[0]='cmd:' + roleCommand[0]
         }
       }
-      if (isObj) {
+      if (!isObj) {
         param = part.join(',')
       }
     }
