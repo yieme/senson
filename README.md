@@ -10,6 +10,16 @@ npm install senson --save
 <!-- EXAMPLES:BEGIN -->
 ## Examples
 
+### Command and object
+
+```js
+var senson = require('../index')
+
+var test   = senson('run', {job:'count'})
+
+console.log(test) // { job: 'count', cmd: 'run' }
+```
+
 ### Regular jsonic
 
 ```js
