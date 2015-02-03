@@ -30,6 +30,16 @@ var test   = senson('cmd:run,job:count')
 console.log(test) // { cmd: 'run', job: 'count' }
 ```
 
+### [Role only](examples/role-only.js)
+
+```js
+var senson = require('senson')
+
+var test   = senson('tasks.,job:count')
+
+console.log(test) // { role: 'tasks', job: 'count' }
+```
+
 ### [Role command](examples/role_command.js)
 
 ```js
